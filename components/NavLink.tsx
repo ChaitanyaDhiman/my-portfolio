@@ -7,10 +7,9 @@ export default function NavLink({ href, label }: NavLinkProps) {
   return (
     <a
       href={href}
-      className="flex items-center gap-2 hover:text-purple-400 transition-colors"
+      className="duration-200 tracking-tighter hover:tracking-normal hover:text-purple-400"
     >
       {label}
-      <span className="text-xs">↗</span>
     </a>
   );
 }
