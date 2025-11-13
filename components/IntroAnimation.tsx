@@ -10,7 +10,7 @@ export default function IntroAnimation({ introComplete }: IntroAnimationProps) {
       }`}
       style={{ transformOrigin: 'center center' }}
     >
-      <h1 className="text-8xl md:text-9xl font-bold tracking-tight">
+      <h1 className="text-8xl md:text-9xl font-bold mb-6 tracking-tight">
         Chaitanya Dhiman
       </h1>
     </div>

@@ -1,8 +1,8 @@
-function Section({ id, title, icon: Icon, children }) {
+export default function Section({ id, title, properties ,icon: Icon, children }) {
   return (
     <section
       id={id}
-      className="min-h-screen flex items-center justify-center px-8 py-24"
+      className= {properties}
     >
       <div className="max-w-4xl w-full text-center">
         <div className="flex items-center justify-center gap-4 mb-8">
