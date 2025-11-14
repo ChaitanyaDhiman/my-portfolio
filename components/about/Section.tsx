@@ -1,4 +1,14 @@
-export default function Section({ id, title, properties ,icon: Icon, children }) {
+import React, { ReactNode, ComponentType } from 'react';
+
+interface Section {
+  id: string;
+  title: string;
+  properties: string; 
+  icon: ComponentType<any>;
+  children: ReactNode;
+}
+
+export default function Section({ id, title, properties ,icon: Icon, children }: Section) {
   return (
     <section
       id={id}

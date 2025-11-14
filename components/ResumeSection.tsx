@@ -1,4 +1,15 @@
-export default function ResumeSection({ title, items }) {
+interface Item {
+  role: string;
+  company: string;
+  period: string;
+}
+
+interface Resume {
+  title: string;
+  items: Item[];
+}
+
+export default function ResumeSection({ title, items }: Resume) {
   return (
     <div>
       <h4 className="text-lg font-semibold text-purple-400 mb-3">{title}</h4>

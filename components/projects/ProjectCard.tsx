@@ -1,6 +1,18 @@
 import { ExternalLink, Github } from 'lucide-react';
+import React, { ReactNode, ComponentType } from 'react';
 
-export default function ProjectCard({ title, description, tech, image, demo, github, compact }) {
+interface ProjectCard {
+  title: string;
+  description: string;
+  tech: string[];
+  image: string;
+  demo: string;
+  github: string;
+  compact: boolean;
+
+}
+
+export default function ProjectCard({ title, description, tech, image, demo, github, compact }: ProjectCard) {
   return (
     <div className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 hover:bg-white/10 transition-all overflow-hidden group">
       <div className="bg-gradient-to-br from-purple-600/20 via-pink-500/20 to-blue-600/20 h-48 flex items-center justify-center text-6xl">
