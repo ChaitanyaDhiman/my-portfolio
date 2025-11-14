@@ -13,7 +13,7 @@ export default function Navigation() {
               My Projects
             </a>
             <a href="/contact" className="duration-200 tracking-tighter hover:tracking-normal hover:text-purple-400">
-              Let's Talk?
+              Let&apos;s Talk?
             </a>
           </div>
           <a href="/" className="hover:text-purple-400">
