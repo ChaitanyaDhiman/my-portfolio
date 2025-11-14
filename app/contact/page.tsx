@@ -17,7 +17,7 @@ export default function ContactPage() {
 
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     setSubmitted(true);
     setTimeout(() => {
@@ -26,7 +26,7 @@ export default function ContactPage() {
     }, 3000);
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: any) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
