@@ -12,7 +12,7 @@ export default function Projects() {
     featured: [
       {
         title: 'My Portfolio Website',
-        description: 'A modern e-commerce platform with real-time inventory, payment integration, and admin dashboard.',
+        description: 'My personal hub, demonstrating end-to-end mastery: from efficient server-side architecture to a clean, responsive user experience.',
         tech: ['Next.js', 'TypeScript', 'TailwindCSS', 'Vercel'],
         image: '👨‍💻',
         demo: 'https://www.chaitanyadhiman.com/',
