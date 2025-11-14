@@ -6,7 +6,7 @@ export default function Navigation() {
       <div className="flex gap-8 text-sm md:text-base">
         <NavLink href="/about" label="About Me" />
         <NavLink href="/projects" label="My Projects" />
-        <NavLink href="/contact" label="Let's Talk?" />
+        <NavLink href="/contact" label="Let&apos;s Talk?" />
       </div>
     </nav>
   );

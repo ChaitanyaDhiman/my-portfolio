@@ -11,12 +11,12 @@ export default function HeroSection() {
       </h1>
 
       <p className="text-gray-300 max-w-2xl text-lg md:text-xl leading-relaxed mb-12">
-        Hey there 👋 I'm a creative developer & designer from India. I specialize in
+        Hey there 👋 I&apos;m a creative developer & designer from India. I specialize in
         building intuitive digital experiences and crafting visually stunning designs.
       </p>
 
       <div className="mb-4 text-gray-400 text-sm">
-        Let's Connect! Find me here
+        Let&apos;s Connect! Find me here
       </div>
       
       <SocialLinks />

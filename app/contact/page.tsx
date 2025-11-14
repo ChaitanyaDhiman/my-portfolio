@@ -46,9 +46,9 @@ export default function ContactPage() {
       <div className="min-h-screen flex items-center justify-center px-8 py-24">
         <div className="max-w-6xl w-full">
           <div className="text-center mb-16">
-            <h1 className="text-6xl md:text-7xl font-bold mb-6 tracking-tight">Let's Talk</h1>
+            <h1 className="text-6xl md:text-7xl font-bold mb-6 tracking-tight">Let&apos;s Talk</h1>
             <p className="text-gray-300 text-xl max-w-2xl mx-auto">
-              Have a project in mind? Let's create something amazing together.
+              Have a project in mind? Let&apos;s create something amazing together.
             </p>
           </div>
 
