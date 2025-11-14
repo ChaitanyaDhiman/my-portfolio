@@ -11,8 +11,7 @@ export default function HeroSection() {
       </h1>
 
       <p className="text-gray-300 max-w-2xl text-lg md:text-xl leading-relaxed mb-12">
-        Hey there 👋 I&apos;m a creative developer & designer from India. I specialize in
-        building intuitive digital experiences and crafting visually stunning designs.
+        Hey there 👋 I&apos;m a Backend Developer by trade, Full-Stack Creator by passion. Building digital solutions from India.
       </p>
 
       <div className="mb-4 text-gray-400 text-sm">

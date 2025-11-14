@@ -15,7 +15,7 @@ export default function Projects() {
         description: 'A modern e-commerce platform with real-time inventory, payment integration, and admin dashboard.',
         tech: ['Next.js', 'TypeScript', 'TailwindCSS', 'Vercel'],
         image: '👨‍💻',
-        demo: '#',
+        demo: 'https://www.chaitanyadhiman.com/',
         github: 'https://github.com/ChaitanyaDhiman/my-portfolio'
       }
     ]
