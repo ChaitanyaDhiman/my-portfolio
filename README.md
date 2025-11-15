@@ -1,8 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio Website
 
-## Getting Started
+A modern, responsive portfolio website built with Next.js, showcasing projects, skills, and contact information. Features smooth animations, an interactive UI, and a functional contact form.
 
-First, run the development server:
+## 🚀 Features
+
+- **Modern Design**: Clean, minimalist interface with dark theme
+- **Smooth Animations**: Powered by Framer Motion for fluid transitions
+- **Interactive Background**: Animated particle background using tsparticles
+- **Responsive Layout**: Fully responsive design that works on all devices
+- **Contact Form**: Functional contact form with email integration
+- **Project Showcase**: Display featured projects with links to demos and repositories
+- **Skills Section**: Organized skill categories with visual cards
+- **Intro Animation**: Engaging intro animation on page load
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 14](https://nextjs.org/) (App Router)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/) & [React Icons](https://react-icons.github.io/react-icons/)
+- **Particles**: [@tsparticles/react](https://www.npmjs.com/package/@tsparticles/react)
+- **Email**: [Nodemailer](https://nodemailer.com/)
+
+## 📋 Prerequisites
+
+Before you begin, ensure you have the following installed:
+
+- [Node.js](https://nodejs.org/) (version 18 or higher)
+- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) or [pnpm](https://pnpm.io/)
+
+## 🔧 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/ChaitanyaDhiman/my-portfolio.git
+cd portfolio
+```
+
+2. Install dependencies:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+3. Create a `.env.local` file in the root directory:
+```env
+EMAIL_USER=your-email@gmail.com
+EMAIL_APP_PASSWORD=your-gmail-app-password
+```
+
+> **Note**: For Gmail, you'll need to generate an [App Password](https://support.google.com/accounts/answer/185833) if you have 2-Step Verification enabled.
+
+## 🚀 Getting Started
+
+Run the development server:
 
 ```bash
 npm run dev
@@ -10,27 +65,75 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📁 Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+```
+portfolio/
+├── app/
+│   ├── about/          # About page
+│   ├── api/
+│   │   └── contact/    # Contact form API endpoint
+│   ├── contact/        # Contact page
+│   ├── projects/       # Projects showcase page
+│   ├── layout.tsx      # Root layout
+│   ├── page.tsx        # Home page
+│   └── globals.css     # Global styles
+├── components/
+│   ├── about/          # About page components
+│   ├── projects/       # Project-related components
+│   ├── AnimatedBackground.tsx
+│   ├── Avatar.tsx
+│   ├── Footer.tsx
+│   ├── HeroSection.tsx
+│   ├── IntroAnimation.tsx
+│   ├── Navigation.tsx
+│   └── SocialLinks.tsx
+├── public/             # Static assets
+└── assets/             # Additional assets
+```
 
-## Learn More
+## 📜 Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `npm run dev` - Start the development server
+- `npm run build` - Build the production application
+- `npm run start` - Start the production server
+- `npm run lint` - Run ESLint to check for code issues
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🌐 Deployment
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The easiest way to deploy this Next.js app is using [Vercel](https://vercel.com/):
 
-## Deploy on Vercel
+1. Push your code to GitHub
+2. Import your repository on Vercel
+3. Add your environment variables in Vercel's project settings
+4. Deploy!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+For more deployment options, check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment).
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## 🔐 Environment Variables
+
+Create a `.env.local` file with the following variables:
+
+| Variable | Description |
+|----------|-------------|
+| `EMAIL_USER` | Your Gmail address |
+| `EMAIL_APP_PASSWORD` | Your Gmail App Password |
+
+## 📝 License
+
+This project is private and proprietary.
+
+## 👤 Author
+
+**Chaitanya Dhiman**
+
+- Portfolio: [chaitanyadhiman.com](https://www.chaitanyadhiman.com/)
+- GitHub: [@ChaitanyaDhiman](https://github.com/ChaitanyaDhiman)
+
+---
+
+Built with ❤️ using Next.js and TypeScript
