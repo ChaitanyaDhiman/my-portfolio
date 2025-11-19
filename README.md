@@ -6,12 +6,13 @@ A modern, responsive portfolio website built with Next.js, showcasing projects, 
 
 - **Modern Design**: Clean, minimalist interface with dark theme
 - **Smooth Animations**: Powered by Framer Motion for fluid transitions
-- **Interactive Background**: Animated particle background using tsparticles
+- **Interactive Background**: CSS-based animated gradient background
 - **Responsive Layout**: Fully responsive design that works on all devices
 - **Contact Form**: Functional contact form with email integration
 - **Project Showcase**: Display featured projects with links to demos and repositories
 - **Skills Section**: Organized skill categories with visual cards
-- **Intro Animation**: Engaging intro animation on page load
+- **Intro Animation**: Engaging intro animation with seamless shared element transition
+- **Resume Download**: Dedicated API route for reliable mobile downloads
 
 ## 🛠️ Tech Stack
 
@@ -77,6 +78,7 @@ portfolio/
 │   ├── about/          # About page
 │   ├── api/
 │   │   └── contact/    # Contact form API endpoint
+│   │   └── download-resume/ # Resume download API endpoint
 │   ├── contact/        # Contact page
 │   ├── projects/       # Projects showcase page
 │   ├── layout.tsx      # Root layout
@@ -85,7 +87,7 @@ portfolio/
 ├── components/
 │   ├── about/          # About page components
 │   ├── projects/       # Project-related components
-│   ├── AnimatedBackground.tsx
+
 │   ├── Avatar.tsx
 │   ├── Footer.tsx
 │   ├── HeroSection.tsx

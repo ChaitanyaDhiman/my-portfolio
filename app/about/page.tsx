@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import AnimatedBackground from '@/components/AnimatedBackground';
+
 import Navigation from '@/components/about/Navigation'
 import FooterSection from '@/components/Footer'
 import Section from '@/components/about/Section'
@@ -15,7 +15,7 @@ export default function AboutPage() {
   const skillsData = [
     {
       category: 'Backend',
-      skills: ['Java', 'Spring Boot', 'Hibernate', 'J2EE' ,'REST APIs']
+      skills: ['Java', 'Spring Boot', 'Hibernate', 'J2EE', 'REST APIs']
     },
     {
       category: 'Frontend',
@@ -27,40 +27,40 @@ export default function AboutPage() {
     },
     {
       category: 'Tools',
-      skills: ['Git', 'Maven', 'Docker', 'IntelliJ IDEA' ,'VS Code', 'Vercel']
+      skills: ['Git', 'Maven', 'Docker', 'IntelliJ IDEA', 'VS Code', 'Vercel']
     }
   ];
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-black text-white">
-      <AnimatedBackground />
+      <div className="animated-background" />
       <div
         className="relative z-10 transition-opacity duration-1000"
       >
         <Navigation />
-        
-        <Section id="intro" title="About Me" properties = "flex items-center justify-center px-8 py-24" icon={Code}>
+
+        <Section id="intro" title="About Me" properties="flex items-center justify-center px-8 py-24" icon={Code}>
           <p className="max-w-2xl mx-auto">
-            Hello! I&apos;m Chaitanya Dhiman, a passionate creative developer and designer based in India. 
-            I believe in the power of design and technology to create meaningful experiences that 
+            Hello! I&apos;m Chaitanya Dhiman, a passionate creative developer and designer based in India.
+            I believe in the power of design and technology to create meaningful experiences that
             make a difference in people&apos;s lives.
           </p>
           <p className="max-w-2xl mx-auto">
-            With a keen eye for aesthetics and a deep understanding of user-centered design, 
-            I craft digital experiences that are not only visually stunning but also intuitive 
+            With a keen eye for aesthetics and a deep understanding of user-centered design,
+            I craft digital experiences that are not only visually stunning but also intuitive
             and accessible to everyone.
           </p>
         </Section>
 
-        <Section id="resume" title="Resume" properties = "flex items-center justify-center px-8" icon={Award}>
+        <Section id="resume" title="Resume" properties="flex items-center justify-center px-8" icon={Award}>
           <div className="max-w-5xl mx-auto w-full">
             <p className="mb-8 text-center">
               Download my resume or view it directly below to learn more about my experience, education, and skills.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
               <a
-                href="/Chaitanya_Resume_2025.pdf"
+                href="/api/download-resume"
                 download
                 className="px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full font-semibold hover:scale-105 transition-transform flex items-center justify-center gap-2"
               >
@@ -98,9 +98,9 @@ export default function AboutPage() {
                 </div>
                 <p className="text-sm text-gray-400 text-center mt-4">
                   If the PDF doesn&apos;t load, you can{' '}
-                  <a 
-                    href="/Chaitanya_Resume_2025.pdf" 
-                    target="_blank" 
+                  <a
+                    href="/Chaitanya_Resume_2025.pdf"
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="text-purple-400 hover:text-purple-300 underline"
                   >
@@ -113,9 +113,9 @@ export default function AboutPage() {
           </div>
         </Section>
 
-        <Section id="skills" title="Skills & Expertise" properties = "flex items-center justify-center px-8 py-20" icon={Award}>
+        <Section id="skills" title="Skills & Expertise" properties="flex items-center justify-center px-8 py-20" icon={Award}>
           <p className="mb-12 max-w-2xl mx-auto">
-            I&apos;ve developed a diverse skill set that spans across development, design, and 
+            I&apos;ve developed a diverse skill set that spans across development, design, and
             modern web technologies.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
@@ -129,7 +129,7 @@ export default function AboutPage() {
           </div>
         </Section>
 
-        <Section id="passion" title="What I Love" properties = "flex items-center justify-center px-8" icon={Heart}>
+        <Section id="passion" title="What I Love" properties="flex items-center justify-center px-8" icon={Heart}>
           <p className="max-w-2xl mx-auto mb-12">
             I&apos;m passionate about creating experiences that blend form and function seamlessly.
           </p>
@@ -158,38 +158,38 @@ export default function AboutPage() {
           </div>
         </Section>
 
-        <Section id="socials" title="Socials" properties = "flex items-center justify-center px-8 py-24" icon={Rocket}>
+        <Section id="socials" title="Socials" properties="flex items-center justify-center px-8 py-24" icon={Rocket}>
           <p className="max-w-2xl mx-auto mb-12">
             You can find me on these Social Media Platforms.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-2 max-w-4xl mx-auto">
             <a href='https://www.instagram.com/chaitanya_dhiman/'>
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-              <Instagram size={40} className="text-purple-400 mb-4 mx-auto"/>
-              <h3 className="text-xl font-semibold mb-3">Follow me on Instagarm</h3>
-            </div>
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                <Instagram size={40} className="text-purple-400 mb-4 mx-auto" />
+                <h3 className="text-xl font-semibold mb-3">Follow me on Instagarm</h3>
+              </div>
             </a>
             <a href='https://www.threads.com/@chaitanya_dhiman'>
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-              <BsThreads size={40} className="text-pink-400 mb-4 mx-auto" />
-              <h3 className="text-xl font-semibold mb-3">Follow me on Threads</h3>
-            </div>
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                <BsThreads size={40} className="text-pink-400 mb-4 mx-auto" />
+                <h3 className="text-xl font-semibold mb-3">Follow me on Threads</h3>
+              </div>
             </a>
             <a href='https://www.linkedin.com/in/chaitanya-dhiman-569a2b136/'>
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-              <Linkedin size={40} className="text-cyan-400 mb-4 mx-auto" />
-              <h3 className="text-xl font-semibold mb-3">Let&apos;s connect on LinkedIn</h3>
-            </div>
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                <Linkedin size={40} className="text-cyan-400 mb-4 mx-auto" />
+                <h3 className="text-xl font-semibold mb-3">Let&apos;s connect on LinkedIn</h3>
+              </div>
             </a>
             <a href='https://github.com/ChaitanyaDhiman'>
-            <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
-              <Github size={40} className="text-cyan-400 mb-4 mx-auto" />
-              <h3 className="text-xl font-semibold mb-3">Star me on GitHub</h3>
-            </div>
+              <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10">
+                <Github size={40} className="text-cyan-400 mb-4 mx-auto" />
+                <h3 className="text-xl font-semibold mb-3">Star me on GitHub</h3>
+              </div>
             </a>
           </div>
         </Section>
-                
+
         <FooterSection />
       </div>
 

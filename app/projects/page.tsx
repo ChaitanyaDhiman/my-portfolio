@@ -1,12 +1,12 @@
 'use client';
 
-import AnimatedBackground from '@/components/AnimatedBackground';
+
 import Navigation from '@/components/about/Navigation'
 import ProjectCard from '@/components/projects/ProjectCard';
 import FooterSection from '@/components/Footer'
 
 
-export default function Projects() { 
+export default function Projects() {
 
   const projects = {
     featured: [
@@ -33,40 +33,40 @@ export default function Projects() {
 
   return (
     <>
-      
+
       <div className="relative min-h-screen overflow-hidden bg-black text-white">
 
-        <AnimatedBackground />
+        <div className="animated-background" />
         <div
-        className="relative z-10 transition-opacity duration-1000"
+          className="relative z-10 transition-opacity duration-1000"
         >
-        <Navigation />
+          <Navigation />
 
-        <section id="featured" className="flex items-center justify-center px-8 py-24">
-          <div className="max-w-6xl w-full">
-            <h2 className="text-5xl md:text-6xl font-bold mb-4 text-center tracking-tight">Featured Projects</h2>
-            <p className="text-gray-400 text-center mb-16 text-lg">Some of my best work</p>
-            <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
-              {projects.featured.map((project, index) => (
-                <ProjectCard key={index} {...project} compact/>
-              ))}
+          <section id="featured" className="flex items-center justify-center px-8 py-24">
+            <div className="max-w-6xl w-full">
+              <h2 className="text-5xl md:text-6xl font-bold mb-4 text-center tracking-tight">Featured Projects</h2>
+              <p className="text-gray-400 text-center mb-16 text-lg">Some of my best work</p>
+              <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+                {projects.featured.map((project, index) => (
+                  <ProjectCard key={index} {...project} compact />
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        <section id="AI_Powered" className="flex items-center justify-center px-8 py-12">
-          <div className="max-w-6xl w-full">
-            <h2 className="text-5xl md:text-6xl font-bold mb-4 text-center tracking-tight">AI-Powered Projects</h2>
-            <p className="text-gray-400 text-center mb-16 text-lg">Projects that use AI to enhance user experience</p>
-            <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
-              {projects.AI_Powered.map((project, index) => (
-                <ProjectCard key={index} {...project} compact/>
-              ))}
+          <section id="AI_Powered" className="flex items-center justify-center px-8 py-12">
+            <div className="max-w-6xl w-full">
+              <h2 className="text-5xl md:text-6xl font-bold mb-4 text-center tracking-tight">AI-Powered Projects</h2>
+              <p className="text-gray-400 text-center mb-16 text-lg">Projects that use AI to enhance user experience</p>
+              <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+                {projects.AI_Powered.map((project, index) => (
+                  <ProjectCard key={index} {...project} compact />
+                ))}
+              </div>
             </div>
-          </div>
-        </section>
+          </section>
 
-        {/* <section id="web-apps" className="min-h-screen flex items-center justify-center px-8 py-24">
+          {/* <section id="web-apps" className="min-h-screen flex items-center justify-center px-8 py-24">
           <div className="max-w-6xl w-full">
             <h2 className="text-5xl md:text-6xl font-bold mb-4 text-center tracking-tight">Web Applications</h2>
             <p className="text-gray-400 text-center mb-16 text-lg">Full-stack web applications</p>
@@ -90,10 +90,10 @@ export default function Projects() {
           </div>
         </section> */}
 
-        <FooterSection />
+          <FooterSection />
 
         </div>
-        
+
       </div>
     </>
   );

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import IntroAnimation from '@/components/IntroAnimation';
-import AnimatedBackground from '@/components/AnimatedBackground';
+
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import FooterSection from '@/components/Footer'
@@ -18,7 +18,7 @@ export default function Home() {
 
     const timer2 = setTimeout(() => {
       setShowContent(true);
-    }, 2500);
+    }, 2000);
 
     return () => {
       clearTimeout(timer1);
@@ -28,14 +28,13 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen overflow-hidden bg-black text-white">
-      <AnimatedBackground />
-      
+      <div className="animated-background" />
+
       <IntroAnimation introComplete={introComplete} />
-      
+
       <div
-        className={`relative z-10 transition-opacity duration-1000 ${
-          showContent ? 'opacity-100' : 'opacity-0'
-        }`}
+        className={`relative z-10 transition-opacity duration-1000 ${showContent ? 'opacity-100' : 'opacity-0'
+          }`}
       >
         <Navigation />
         <HeroSection />

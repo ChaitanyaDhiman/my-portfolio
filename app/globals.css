@@ -1,4 +1,56 @@
-/* app/globals.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.animated-background {
+    position: absolute;
+    inset: 0;
+    opacity: 0.6;
+}
+
+.animated-background::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom right, #9333ea, #ec4899, #2563eb);
+    /* purple-600, pink-500, blue-600 */
+    animation: gradient 15s ease infinite;
+}
+
+.animated-background::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top left, #06b6d4, #4f46e5, #7e22ce);
+    /* cyan-500, indigo-600, purple-700 */
+    animation: gradient-reverse 20s ease infinite;
+    mix-blend-mode: multiply;
+}
+
+@keyframes gradient {
+    0% {
+        transform: translate(0%, 0%) scale(1);
+    }
+
+    50% {
+        transform: translate(10%, 10%) scale(1.1);
+    }
+
+    100% {
+        transform: translate(0%, 0%) scale(1);
+    }
+}
+
+@keyframes gradient-reverse {
+    0% {
+        transform: translate(0%, 0%) scale(1);
+    }
+
+    50% {
+        transform: translate(-10%, -10%) scale(1.1);
+    }
+
+    100% {
+        transform: translate(0%, 0%) scale(1);
+    }
+}
