@@ -25,7 +25,7 @@ export default function Projects() {
         description: 'ResumeForge is an AI-powered resume optimization tool that helps job seekers tailor their resumes to specific job descriptions.',
         tech: ['Next.js', 'TypeScript', 'TailwindCSS', 'OpenAI', 'Python', 'Flask', 'Vercel'],
         image: '📄',
-        demo: '',
+        demo: 'https://resume-forge-silk.vercel.app/',
         github: 'https://github.com/ChaitanyaDhiman/ResumeForge'
       }
     ]
