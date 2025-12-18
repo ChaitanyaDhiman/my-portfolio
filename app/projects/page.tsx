@@ -17,6 +17,15 @@ export default function Projects() {
         image: '👨‍💻',
         demo: 'https://www.chaitanyadhiman.com/',
         github: 'https://github.com/ChaitanyaDhiman/my-portfolio'
+      },
+      {
+        title: 'Homelab Dashboard',
+        description: 'Homelab-Web is a self-hosted Next.js dashboard for homelab enthusiasts, designed to provide a clean starting point for building and managing a personal homelab UI. It includes a ready-to-use Docker Compose setup for quick and hassle-free deployment.',
+        tech: ['Next.js', 'TypeScript', 'TailwindCSS', 'Docker'],
+        image: '🏠',
+        demo: '',
+        github: 'https://github.com/ChaitanyaDhiman/homelab-web'
+
       }
     ],
     AI_Powered: [
@@ -46,7 +55,7 @@ export default function Projects() {
             <div className="max-w-6xl w-full">
               <h2 className="text-5xl md:text-6xl font-bold mb-4 text-center tracking-tight">Featured Projects</h2>
               <p className="text-gray-400 text-center mb-16 text-lg">Some of my best work</p>
-              <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+              <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
                 {projects.featured.map((project, index) => (
                   <ProjectCard key={index} {...project} compact />
                 ))}
