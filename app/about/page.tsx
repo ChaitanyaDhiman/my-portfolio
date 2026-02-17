@@ -91,7 +91,7 @@ export default function AboutPage() {
               <div className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 p-4 mb-8 overflow-hidden">
                 <div className="bg-black/20 rounded-lg overflow-hidden">
                   <iframe
-                    src="/Chaitanya_Resume_2025.pdf#toolbar=1&navpanes=1&scrollbar=1"
+                    src="/Chaitanya_Resume_2026.pdf#toolbar=1&navpanes=1&scrollbar=1"
                     className="w-full h-[800px] border-0"
                     title="Resume PDF Viewer"
                   />
@@ -99,7 +99,7 @@ export default function AboutPage() {
                 <p className="text-sm text-gray-400 text-center mt-4">
                   If the PDF doesn&apos;t load, you can{' '}
                   <a
-                    href="/Chaitanya_Resume_2025.pdf"
+                    href="/Chaitanya_Resume_2026.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-purple-400 hover:text-purple-300 underline"
